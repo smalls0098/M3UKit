@@ -77,6 +77,7 @@ public final class PlaylistParser {
 
       if self.isInfoLine(line) {
         lastMetadataLine = line
+        return
       } else if let url = URL(string: line) {
         lastURL = url
       }
